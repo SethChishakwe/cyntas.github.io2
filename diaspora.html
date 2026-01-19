@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diaspora Investing - Cyntas Financial Empowerment</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+
+    <!-- Fixed Favicon Links - Using relative paths -->
+    <link rel="icon" type="image/x-icon" href="logo.jpg">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Cyntas" />
+    <link rel="manifest" href="site.webmanifest" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-img">
+                    <img src="logo.jpg" alt="Cyntas Logo" loading="lazy" height="50">
+                </div>
+                <span class="logo-sub">Cyntas</span>
+            </a>
+            
+            <!-- Burger Menu Button -->
+            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <!-- Menu Overlay -->
+            <div class="menu-overlay"></div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">How It Works</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="micro_investing.html">Investing</a></li>
+                <li><a href="diaspora.html">Diaspora</a></li>
+                <li><a href="register.html" class="btn">Get Started</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Diaspora Investment Services</h1>
+            <p>Secure, transparent investment opportunities for Zimbabweans living abroad</p>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title">Why Invest Through Cyntas?</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3><i class="fas fa-globe-americas" style="color: var(--accent); margin-right: 0.5rem;"></i> Cross-Border Expertise</h3>
+                    <p>We understand the complexities of sending money to Zimbabwe and have streamlined the process for diaspora investors.</p>
+                </div>
+                <div class="about-card">
+                    <h3><i class="fas fa-shield-alt" style="color: var(--accent); margin-right: 0.5rem;"></i> Secure Investment Structure</h3>
+                    <p>Your investments are held in protected trust accounts with regular audits and transparent reporting.</p>
+                </div>
+                <div class="about-card">
+                    <h3><i class="fas fa-chart-line" style="color: var(--accent); margin-right: 0.5rem;"></i> Regular Updates</h3>
+                    <p>Receive monthly progress reports and quarterly statements showing exactly how your investment is performing.</p>
+                </div>
+                <div class="about-card">
+                    <h3><i class="fas fa-money-bill-wave" style="color: var(--accent); margin-right: 0.5rem;"></i> Multiple Currency Options</h3>
+                    <p>Invest in USD, GBP, EUR, or ZAR. We handle all currency conversions at competitive rates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Packages -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Special Diaspora Investment Packages</h2>
+            <div class="investment-grid">
+                <div class="investment-card">
+                    <div class="investment-badge">Premium</div>
+                    <h3><i class="fas fa-building" style="color: var(--accent); margin-right: 0.5rem;"></i> Property Development Fund</h3>
+                    <div class="investment-minimum">From $1,000</div>
+                    <div class="investment-description">
+                        <p>Invest in residential and commercial property developments in Harare, Bulawayo, and Victoria Falls.</p>
+                        <ul class="investment-features">
+                            <li>18-24 month investment horizon</li>
+                            <li>Expected returns: 25-35%</li>
+                            <li>Monthly construction updates</li>
+                            <li>Option to purchase units at discount</li>
+                        </ul>
+                    </div>
+                    <div class="investment-stats">
+                        <div class="stat">
+                            <span class="stat-value">87%</span>
+                            <span class="stat-label">Diaspora Investors</span>
+                        </div>
+                    </div>
+                    <a href="register.html?interest=property&type=diaspora" class="investment-button">Invest in Property</a>
+                </div>
+
+                <div class="investment-card">
+                    <h3><i class="fas fa-tractor" style="color: var(--accent); margin-right: 0.5rem;"></i> Commercial Agriculture Fund</h3>
+                    <div class="investment-minimum">From $500</div>
+                    <div class="investment-description">
+                        <p>Large-scale agricultural projects focusing on export crops like tobacco, citrus, and macadamia nuts.</p>
+                        <ul class="investment-features">
+                            <li>12-month crop cycles</li>
+                            <li>Expected returns: 20-30%</li>
+                            <li>Direct export market access</li>
+                            <li>Seasonal harvest reports</li>
+                        </ul>
+                    </div>
+                    <div class="investment-stats">
+                        <div class="stat">
+                            <span class="stat-value">92%</span>
+                            <span class="stat-label">Success Rate</span>
+                        </div>
+                    </div>
+                    <a href="register.html?interest=commercial_agriculture&type=diaspora" class="investment-button">Invest in Agriculture</a>
+                </div>
+
+                <div class="investment-card">
+                    <h3><i class="fas fa-industry" style="color: var(--accent); margin-right: 0.5rem;"></i> Industrial Park Development</h3>
+                    <div class="investment-minimum">From $2,000</div>
+                    <div class="investment-description">
+                        <p>Invest in the development of industrial parks and manufacturing facilities across Zimbabwe.</p>
+                        <ul class="investment-features">
+                            <li>24-36 month horizon</li>
+                            <li>Expected returns: 30-40%</li>
+                            <li>Government partnership projects</li>
+                            <li>Rental income + capital growth</li>
+                        </ul>
+                    </div>
+                    <div class="investment-stats">
+                        <div class="stat">
+                            <span class="stat-value">64</span>
+                            <span class="stat-label">Active Projects</span>
+                        </div>
+                    </div>
+                    <a href="register.html?interest=industrial&type=diaspora" class="investment-button">Invest in Industry</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Solutions -->
+    <section class="about" style="background: var(--secondary-bg);">
+        <div class="container">
+            <h2 class="section-title">Diaspora Payment Solutions</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3><i class="fas fa-university" style="color: var(--accent); margin-right: 0.5rem;"></i> International Bank Transfer</h3>
+                    <p>Direct transfers to our international banking partners in South Africa, UK, and USA with competitive exchange rates.</p>
+                </div>
+                <div class="about-card">
+                    <h3><i class="fab fa-paypal" style="color: var(--accent); margin-right: 0.5rem;"></i> PayPal & Wise</h3>
+                    <p>Secure online payments through international payment platforms with fast processing times.</p>
+                </div>
+                <div class="about-card">
+                    <h3><i class="fas fa-mobile-alt" style="color: var(--accent); margin-right: 0.5rem;"></i> Mobile Money International</h3>
+                    <p>Send directly to EcoCash or OneMoney from supported countries with instant delivery.</p>
+                </div>
+                <div class="about-card">
+                    <h3><i class="fab fa-bitcoin" style="color: var(--accent); margin-right: 0.5rem;"></i> Cryptocurrency</h3>
+                    <p>Bitcoin and Ethereum accepted for larger investments with secure wallet-to-wallet transfers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Diaspora Investor Stories</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card" style="background: var(--primary-bg); color: var(--primary-text);">
+                    <div class="testimonial-content">
+                        "Living in the UK, I wanted to invest back home but didn't know where to start. Cyntas made it simple. I started with $1,000 in property development, and after 2 years, I've earned enough to build my own house in Harare."
+                    </div>
+                    <div class="testimonial-author">
+                        <strong style="color: var(--accent);">Kudzai M., London</strong>
+                        <span style="color: rgba(255, 255, 255, 0.8);">Nurse, investing since 2021</span>
+                    </div>
+                </div>
+                <div class="testimonial-card" style="background: var(--primary-bg); color: var(--primary-text);">
+                    <div class="testimonial-content">
+                        "As a software developer in Canada, I appreciate the digital-first approach. The monthly updates and online dashboard give me peace of mind. My $500 monthly investment has grown to over $8,000 in three years."
+                    </div>
+                    <div class="testimonial-author">
+                        <strong style="color: var(--accent);">Tendai G., Toronto</strong>
+                        <span style="color: rgba(255, 255, 255, 0.8);">Software Developer, investing since 2020</span>
+                    </div>
+                </div>
+                <div class="testimonial-card" style="background: var(--primary-bg); color: var(--primary-text);">
+                    <div class="testimonial-content">
+                        "Working in Australia, I needed reliable partners to manage my investments in Zimbabwe. Cyntas' transparency and regular communication exceeded my expectations. I've recommended them to all my Zimbabwean friends abroad."
+                    </div>
+                    <div class="testimonial-author">
+                        <strong style="color: var(--accent);">Sarah T., Sydney</strong>
+                        <span style="color: rgba(255, 255, 255, 0.8);">Accountant, investing since 2019</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title">Diaspora-Specific Support</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3><i class="fas fa-clock" style="color: var(--accent); margin-right: 0.5rem;"></i> 24/7 Support</h3>
+                    <p>Our diaspora team operates across time zones, ensuring you get support whenever you need it, wherever you are.</p>
+                </div>
+                <div class="about-card">
+                    <h3><i class="fas fa-passport" style="color: var(--accent); margin-right: 0.5rem;"></i> Dual-Citizenship Advice</h3>
+                    <p>Guidance on tax implications and legal considerations for investors with dual citizenship.</p>
+                </div>
+                <div class="about-card">
+                    <h3><i class="fas fa-plane" style="color: var(--accent); margin-right: 0.5rem;"></i> In-Person Meetings</h3>
+                    <p>Annual investor meetings in major diaspora hubs: London, Johannesburg, Sydney, and New York.</p>
+                </div>
+                <div class="about-card">
+                    <h3><i class="fas fa-file-contract" style="color: var(--accent); margin-right: 0.5rem;"></i> Legal Documentation</h3>
+                    <p>All agreements available in digital format for easy signing from anywhere in the world.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section style="background: var(--primary-bg); color: var(--primary-text); padding: 5rem 0; text-align: center;">
+        <div class="container">
+            <h2 style="font-size: 2.5rem; font-weight: 300; margin-bottom: 1rem;">Start Building Your Legacy in Zimbabwe</h2>
+            <p style="margin-bottom: 2rem; color: rgba(255, 255, 255, 0.8); max-width: 700px; margin-left: auto; margin-right: auto;">
+                Join over 2,000 diaspora investors who are creating wealth and making a difference back home.
+            </p>
+            <div class="cta-buttons">
+                <a href="register.html?type=diaspora" class="btn btn-primary" style="padding: 15px 40px;">Register as Diaspora Investor</a>
+                <a href="contact.html" class="btn" style="border-color: rgba(255, 255, 255, 0.3);">Schedule a Consultation</a>
+            </div>
+            <div style="margin-top: 2rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                <div style="text-align: center;">
+                    <div style="font-size: 2rem; font-weight: 700; color: var(--accent);">2,000+</div>
+                    <div style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.8);">Diaspora Investors</div>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 2rem; font-weight: 700; color: var(--accent);">$15M+</div>
+                    <div style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.8);">Total Investments</div>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 2rem; font-weight: 700; color: var(--accent);">24/7</div>
+                    <div style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.8);">Support Available</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as other pages) -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Top Section -->
+            <div class="footer-top">
+                <div class="footer-logo-section">
+                    <a href="index.html" class="footer-logo">
+                        <div class="logo-img">
+                            <img src="logo.jpg" alt="Cyntas Logo" loading="lazy" height="50">
+                        </div>
+                        <span class="logo-sub-footer">Cyntas</span>
+                    </a>
+                    
+                    <div class="footer-description">
+                        Driving capital to exceptional investment opportunities through disciplined 
+                        strategies and innovative financial solutions.
+                    </div>
+                </div>
+                
+                <div class="footer-nav-grid">
+                    <div class="footer-nav-column">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="about.html">Our Story</a></li>
+                            <li><a href="about.html#values">Our Values</a></li>
+                            <li><a href="about.html#process">Investment Process</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-nav-column">
+                        <h3>Investments</h3>
+                        <ul>
+                            <li><a href="micro_investing.html">Grazing Fund</a></li>
+                            <li><a href="micro_investing.html#synthetics">Synthetics Fund</a></li>
+                            <li><a href="micro_investing.html#business">Small Business Fund</a></li>
+                            <li><a href="diaspora.html">Diaspora Investments</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-nav-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="education.html">Financial Education</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="blog.html">Blog & Insights</a></li>
+                            <li><a href="guides.html">Investment Guides</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-nav-column">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms of Use</a></li>
+                            <li><a href="disclosures.html">Disclosures</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Middle Section -->
+            <div class="footer-middle">
+                <div class="contact-info">
+                    <div class="contact-column">
+                        <h4>Head Office</h4>
+                        <p><br>Mutare, Zimbabwe<br>Phone: +263 78 522 7615</p>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://linkedin.com" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://facebook.com" target="_blank" class="social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Bottom Section -->
+            <div class="footer-bottom">
+                <div class="legal-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Use</a>
+                    <a href="disclosures.html">Disclosures</a>
+                    <a href="cookies.html">Cookie Policy</a>
+                </div>
+                
+                <div class="copyright">
+                    © 2025 CYNTAS Capital. All rights reserved.<br>
+                    CYNTAS "Make the tough choice now for an easier future."
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fa fa-chevron-up"></i>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+    // Additional animations for diaspora page
+    document.addEventListener('DOMContentLoaded', function() {
+        // Animate investment cards on scroll
+        const investmentCards = document.querySelectorAll('.investment-card');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }, index * 200);
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        investmentCards.forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(card);
+        });
+
+        // Add hover effects to all cards
+        const allCards = document.querySelectorAll('.about-card, .investment-card, .testimonial-card');
+        allCards.forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                if (this.classList.contains('investment-card')) {
+                    this.style.transform = 'translateY(-10px)';
+                } else {
+                    this.style.transform = 'translateY(-5px)';
+                }
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Country selector for diaspora investors
+        const countrySelector = document.createElement('div');
+        countrySelector.innerHTML = `
+            <div style="background: rgba(212, 175, 55, 0.1); padding: 1rem; border-radius: 8px; margin: 2rem 0; text-align: center;">
+                <h4 style="margin-bottom: 1rem; color: var(--primary-bg);">Select Your Country for Specific Information:</h4>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <button class="country-btn" data-country="uk">🇬🇧 United Kingdom</button>
+                    <button class="country-btn" data-country="usa">🇺🇸 United States</button>
+                    <button class="country-btn" data-country="canada">🇨🇦 Canada</button>
+                    <button class="country-btn" data-country="australia">🇦🇺 Australia</button>
+                    <button class="country-btn" data-country="south-africa">🇿🇦 South Africa</button>
+                </div>
+                <div id="country-info" style="margin-top: 1rem; padding: 1rem; background: white; border-radius: 6px; display: none;"></div>
+            </div>
+        `;
+
+        // Insert after testimonials
+        const testimonialsSection = document.querySelector('section.services');
+        if (testimonialsSection) {
+            testimonialsSection.parentNode.insertBefore(countrySelector, testimonialsSection.nextSibling);
+        }
+
+        // Country button functionality
+        const countryButtons = document.querySelectorAll('.country-btn');
+        const countryInfo = document.getElementById('country-info');
+        
+        const countryData = {
+            'uk': {
+                title: '🇬🇧 United Kingdom Investors',
+                info: '• GBP investments accepted directly<br>• UK bank transfers supported<br>• Tax consultation available for UK residents<br>• Quarterly investor meetings in London<br>• FCA-compliant reporting'
+            },
+            'usa': {
+                title: '🇺🇸 United States Investors',
+                info: '• USD investments accepted<br>• Wire transfers from US banks<br>• SEC-compliant documentation<br>• New York investor meetups<br>• 1099 tax forms available'
+            },
+            'canada': {
+                title: '🇨🇦 Canadian Investors',
+                info: '• CAD to USD conversion at competitive rates<br>• Toronto investor meetings quarterly<br>• CRA tax guidance available<br>• E-Transfer support<br>• French documentation available'
+            },
+            'australia': {
+                title: '🇦🇺 Australian Investors',
+                info: '• AUD investments accepted<br>• Sydney and Melbourne meetups<br>• ATO tax guidance<br>• Australian business hours support<br>• Direct bank transfer from Australian banks'
+            },
+            'south-africa': {
+                title: '🇿🇦 South African Investors',
+                info: '• ZAR investments accepted<br>• Johannesburg investor meetings monthly<br>• SARB compliance support<br>• Easy EFT transfers<br>• Rand hedging strategies available'
+            }
+        };
+
+        countryButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const country = this.getAttribute('data-country');
+                const data = countryData[country];
+                
+                // Update active button
+                countryButtons.forEach(btn => {
+                    btn.style.background = '';
+                    btn.style.color = '';
+                });
+                this.style.background = 'var(--accent)';
+                this.style.color = 'white';
+                
+                // Show country info
+                countryInfo.innerHTML = `
+                    <h5 style="margin-bottom: 0.5rem; color: var(--primary-bg);">${data.title}</h5>
+                    <p style="color: var(--gray-text); margin: 0;">${data.info}</p>
+                `;
+                countryInfo.style.display = 'block';
+            });
+            
+            // Style buttons
+            button.style.padding = '0.5rem 1rem';
+            button.style.border = '1px solid var(--accent)';
+            button.style.borderRadius = '4px';
+            button.style.background = 'transparent';
+            button.style.color = 'var(--accent)';
+            button.style.cursor = 'pointer';
+            button.style.transition = 'all 0.2s ease';
+        });
+
+        // Auto-select first country
+        if (countryButtons.length > 0) {
+            countryButtons[0].click();
+        }
+    });
+    </script>
+</body>
+
+</html>
+

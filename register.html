@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Cyntas Financial Empowerment</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+    <!-- Fixed Favicon Links - Using relative paths -->
+    <link rel="icon" type="image/x-icon" href="logo.jpg">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Cyntas" />
+    <link rel="manifest" href="site.webmanifest" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-img">
+                    <img src="logo.jpg" alt="Cyntas Logo" loading="lazy" height="50">
+                </div>
+                <span class="logo-sub">Cyntas</span>
+            </a>
+            
+            <!-- Burger Menu Button -->
+            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <!-- Menu Overlay -->
+            <div class="menu-overlay"></div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">How It Works</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="micro_investing.html">Investing</a></li>
+                <li><a href="diaspora.html">Diaspora</a></li>
+                <li><a href="register.html" class="btn">Get Started</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Begin Your Investment Journey</h1>
+            <p>Join our community of forward-thinking investors building wealth for the future</p>
+        </div>
+    </section>
+
+    <!-- Registration Benefits -->
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title">Why Register with Cyntas?</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3><i class="fas fa-user-shield" style="color: var(--accent); margin-right: 0.5rem;"></i> Secure Registration</h3>
+                    <p>Your information is protected with bank-level security and will only be used for investment purposes.</p>
+                </div>
+                <div class="about-card">
+                    <h3><i class="fas fa-headset" style="color: var(--accent); margin-right: 0.5rem;"></i> Personal Guidance</h3>
+                    <p>Get assigned a dedicated investment advisor who will guide you through the entire process.</p>
+                </div>
+                <div class="about-card">
+                    <h3><i class="fas fa-rocket" style="color: var(--accent); margin-right: 0.5rem;"></i> Quick Start</h3>
+                    <p>Start investing within 24 hours of registration. We expedite the onboarding process.</p>
+                </div>
+                <div class="about-card">
+                    <h3><i class="fas fa-graduation-cap" style="color: var(--accent); margin-right: 0.5rem;"></i> Free Resources</h3>
+                    <p>Access free educational materials and investment guides as part of your registration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="process-explanation" style="background: var(--secondary-bg);">
+        <div class="container">
+            <div class="registration-form">
+                <h2 style="color: var(--primary-bg);">Investor Registration</h2>
+                <p class="section-subtitle" style="text-align: center; margin-bottom: 2rem;">Complete this form to start your investment journey</p>
+                
+                <!-- Success Message Container -->
+                <div id="successMessage" class="success-message" style="display: none; margin-bottom: 2rem;">
+                    Registration successful! Our team will contact you within 24 hours.
+                </div>
+                
+                <!-- Error Message Container -->
+                <div id="errorMessage" class="error-message" style="display: none; margin-bottom: 2rem;">
+                    Please fill in all required fields correctly.
+                </div>
+                
+                <form id="registrationForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first_name">First Name *</label>
+                            <input type="text" id="first_name" name="first_name" required placeholder="Enter your first name">
+                            <div class="field-error" style="display: none;"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="last_name">Last Name *</label>
+                            <input type="text" id="last_name" name="last_name" required placeholder="Enter your last name">
+                            <div class="field-error" style="display: none;"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                            <div class="field-error" style="display: none;"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+263 77 123 4567">
+                            <div class="field-error" style="display: none;"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="location">Location *</label>
+                        <select id="location" name="location" required>
+                            <option value="">Select your location</option>
+                            <option value="Harare">Harare</option>
+                            <option value="Bulawayo">Bulawayo</option>
+                            <option value="Mutare">Mutare</option>
+                            <option value="Gweru">Gweru</option>
+                            <option value="Masvingo">Masvingo</option>
+                            <option value="Chitungwiza">Chitungwiza</option>
+                            <option value="Other Zimbabwe">Other (Zimbabwe)</option>
+                            <option value="Diaspora">Diaspora (Outside Zimbabwe)</option>
+                        </select>
+                        <div class="field-error" style="display: none;"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="interest_area">Primary Investment Interest *</label>
+                        <select id="interest_area" name="interest_area" required>
+                            <option value="">Select your interest</option>
+                            <option value="Agriculture">Agriculture (Maize Collective)</option>
+                            <option value="Renewable Energy">Renewable Energy (Solar Fund)</option>
+                            <option value="Small Business">Small Business Loans</option>
+                            <option value="Property Development">Property Development</option>
+                            <option value="Commercial Agriculture">Commercial Agriculture</option>
+                            <option value="Industrial Development">Industrial Development</option>
+                            <option value="Not Sure">Not Sure - Need Guidance</option>
+                        </select>
+                        <div class="field-error" style="display: none;"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="investment_level">Monthly Investment Amount *</label>
+                        <select id="investment_level" name="investment_level" required>
+                            <option value="">Select investment level</option>
+                            <option value="Starter ($10-50)">Starter: $10-50 per month</option>
+                            <option value="Growth ($50-200)">Growth: $50-200 per month</option>
+                            <option value="Advanced ($200-500)">Advanced: $200-500 per month</option>
+                            <option value="Premium ($500+)">Premium: $500+ per month</option>
+                            <option value="Diaspora ($1,000+)">Diaspora: $1,000+ per month</option>
+                        </select>
+                        <div class="field-error" style="display: none;"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="referral_source">How did you hear about us?</label>
+                        <select id="referral_source" name="referral_source">
+                            <option value="">Select an option</option>
+                            <option value="Friend/Family">Friend or Family</option>
+                            <option value="Social Media">Social Media</option>
+                            <option value="Search Engine">Search Engine</option>
+                            <option value="Workshop/Seminar">Workshop/Seminar</option>
+                            <option value="Advertisement">Advertisement</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="investment_experience">Investment Experience</label>
+                        <select id="investment_experience" name="investment_experience">
+                            <option value="">Select your experience level</option>
+                            <option value="Beginner">Beginner (First time investor)</option>
+                            <option value="Some Experience">Some Experience (1-2 years)</option>
+                            <option value="Experienced">Experienced (3+ years)</option>
+                            <option value="Professional">Professional Investor</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="additional_info">Additional Information (Optional)</label>
+                        <textarea id="additional_info" name="additional_info" rows="3" placeholder="Tell us about your investment goals or any questions..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label style="display: flex; align-items: flex-start; cursor: pointer;">
+                            <input type="checkbox" name="terms" id="terms" required style="margin-top: 0.3rem; margin-right: 0.5rem;">
+                            <span>I agree to the <a href="terms.html" target="_blank" style="color: var(--accent);">Terms & Conditions</a> and <a href="privacy.html" target="_blank" style="color: var(--accent);">Privacy Policy</a> *</span>
+                        </label>
+                        <div id="termsError" class="field-error" style="display: none;"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label style="display: flex; align-items: flex-start; cursor: pointer;">
+                            <input type="checkbox" name="newsletter" id="newsletter" checked style="margin-top: 0.3rem; margin-right: 0.5rem;">
+                            <span>I would like to receive investment updates, educational content, and market insights</span>
+                        </label>
+                    </div>
+                    
+                    <div class="form-group" style="text-align: center; margin-top: 2rem;">
+                        <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem;">
+                            <div style="text-align: center;">
+                                <i class="fas fa-lock" style="color: var(--accent); font-size: 1.5rem; margin-bottom: 0.5rem;"></i>
+                                <div style="font-size: 0.9rem; color: var(--gray-text);">Secure Data</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <i class="fas fa-shield-alt" style="color: var(--accent); font-size: 1.5rem; margin-bottom: 0.5rem;"></i>
+                                <div style="font-size: 0.9rem; color: var(--gray-text);">256-bit Encryption</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <i class="fas fa-user-check" style="color: var(--accent); font-size: 1.5rem; margin-bottom: 0.5rem;"></i>
+                                <div style="font-size: 0.9rem; color: var(--gray-text);">Verified Identity</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <span id="submitText">Complete Registration</span>
+                        <span id="loadingSpinner" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i> Processing...
+                        </span>
+                    </button>
+                    
+                    <p class="form-note" style="text-align: center; margin-top: 1.5rem; color: var(--gray-text); font-size: 0.9rem;">
+                        After registration, our team will contact you within 24 hours to guide you through the next steps.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Steps -->
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title">What Happens After Registration?</h2>
+            <div class="process-timeline">
+                <div class="timeline">
+                    <div class="timeline-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Confirmation Call</h3>
+                            <p>Within 24 hours, our investment advisor will call you to confirm your details and answer initial questions.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Documentation</h3>
+                            <p>We'll guide you through the necessary documentation process, which can be completed digitally.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Investment Plan</h3>
+                            <p>Your advisor will create a personalized investment plan based on your goals and risk tolerance.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>First Investment</h3>
+                            <p>Make your first investment and start your wealth-building journey with our support.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section style="background: var(--primary-bg); color: var(--primary-text); padding: 4rem 0; text-align: center;">
+        <div class="container">
+            <h2 style="font-size: 2rem; font-weight: 300; margin-bottom: 1rem;">Need Help Registering?</h2>
+            <p style="margin-bottom: 2rem; color: rgba(255, 255, 255, 0.8); max-width: 600px; margin-left: auto; margin-right: auto;">
+                Our support team is available to assist you with the registration process.
+            </p>
+            <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                <div style="text-align: center;">
+                    <div style="font-size: 1.5rem; color: var(--accent); margin-bottom: 0.5rem;">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div style="font-weight: 600;">+263 77 123 4567</div>
+                    <div style="font-size: 0.9rem; opacity: 0.8;">Call Us</div>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 1.5rem; color: var(--accent); margin-bottom: 0.5rem;">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div style="font-weight: 600;">WhatsApp</div>
+                    <div style="font-size: 0.9rem; opacity: 0.8;">Quick Chat</div>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 1.5rem; color: var(--accent); margin-bottom: 0.5rem;">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div style="font-weight: 600;">support@cyntas.co.zw</div>
+                    <div style="font-size: 0.9rem; opacity: 0.8;">Email Us</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as micro_investing.html) -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Top Section -->
+            <div class="footer-top">
+                <div class="footer-logo-section">
+                    <a href="index.html" class="footer-logo">
+                        <div class="logo-img">
+                            <img src="logo.jpg" alt="Cyntas Logo" loading="lazy" height="50">
+                        </div>
+                        <span class="logo-sub-footer">Cyntas</span>
+                    </a>
+                    
+                    <div class="footer-description">
+                        Driving capital to exceptional investment opportunities through disciplined 
+                        strategies and innovative financial solutions.
+                    </div>
+                </div>
+                
+                <div class="footer-nav-grid">
+                    <div class="footer-nav-column">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="about.html">Our Story</a></li>
+                            <li><a href="about.html#values">Our Values</a></li>
+                            <li><a href="about.html#process">Investment Process</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-nav-column">
+                        <h3>Investments</h3>
+                        <ul>
+                            <li><a href="micro_investing.html">Grazing Fund</a></li>
+                            <li><a href="micro_investing.html#synthetics">Synthetics Fund</a></li>
+                            <li><a href="micro_investing.html#business">Small Business Fund</a></li>
+                            <li><a href="diaspora.html">Diaspora Investments</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-nav-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="education.html">Financial Education</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="blog.html">Blog & Insights</a></li>
+                            <li><a href="guides.html">Investment Guides</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-nav-column">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms of Use</a></li>
+                            <li><a href="disclosures.html">Disclosures</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Middle Section -->
+            <div class="footer-middle">
+                <div class="contact-info">
+                    <div class="contact-column">
+                        <h4>Head Office</h4>
+                        <p><br>Mutare, Zimbabwe<br>Phone: +263 78 522 7615</p>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://linkedin.com" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://facebook.com" target="_blank" class="social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Bottom Section -->
+            <div class="footer-bottom">
+                <div class="legal-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Use</a>
+                    <a href="disclosures.html">Disclosures</a>
+                    <a href="cookies.html">Cookie Policy</a>
+                </div>
+                
+                <div class="copyright">
+                    © 2025 CYNTAS Capital. All rights reserved.<br>
+                    CYNTAS "Make the tough choice now for an easier future."
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fa fa-chevron-up"></i>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+    // Enhanced registration form functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('registrationForm');
+        const successMessage = document.getElementById('successMessage');
+        const errorMessage = document.getElementById('errorMessage');
+        const submitText = document.getElementById('submitText');
+        const loadingSpinner = document.getElementById('loadingSpinner');
+        const submitBtn = form.querySelector('.submit-btn');
+
+        // Pre-fill form from URL parameters
+        function prefillFromURL() {
+            const urlParams = new URLSearchParams(window.location.search);
+            
+            // Pre-fill interest area
+            const interest = urlParams.get('interest');
+            if (interest) {
+                const interestSelect = document.getElementById('interest_area');
+                const optionMap = {
+                    'agriculture': 'Agriculture',
+                    'renewable': 'Renewable Energy',
+                    'business': 'Small Business',
+                    'property': 'Property Development',
+                    'commercial_agriculture': 'Commercial Agriculture',
+                    'industrial': 'Industrial Development'
+                };
+                
+                if (optionMap[interest]) {
+                    interestSelect.value = optionMap[interest];
+                }
+            }
+            
+            // Pre-fill workshop type
+            const workshop = urlParams.get('workshop');
+            if (workshop) {
+                const workshopMap = {
+                    'basic': 'Beginner (First time investor)',
+                    'agriculture': 'Some Experience (1-2 years)',
+                    'advanced': 'Experienced (3+ years)'
+                };
+                
+                const experienceSelect = document.getElementById('investment_experience');
+                if (workshopMap[workshop]) {
+                    experienceSelect.value = workshopMap[workshop];
+                }
+            }
+            
+            // Pre-fill diaspora type
+            const type = urlParams.get('type');
+            if (type === 'diaspora') {
+                const levelSelect = document.getElementById('investment_level');
+                const locationSelect = document.getElementById('location');
+                
+                levelSelect.value = 'Diaspora ($1,000+)';
+                locationSelect.value = 'Diaspora';
+            }
+        }
+
+        // Form validation
+        function validateForm() {
+            let isValid = true;
+            
+            // Clear previous errors
+            document.querySelectorAll('.field-error').forEach(error => {
+                error.style.display = 'none';
+                error.textContent = '';
+            });
+            
+            errorMessage.style.display = 'none';
+            
+            // Validate required fields
+            const requiredFields = form.querySelectorAll('[required]');
+            requiredFields.forEach(field => {
+                const errorDiv = field.parentElement.querySelector('.field-error');
+                
+                if (!field.value.trim()) {
+                    isValid = false;
+                    field.style.borderColor = 'var(--danger)';
+                    if (errorDiv) {
+                        errorDiv.textContent = 'This field is required';
+                        errorDiv.style.display = 'block';
+                    }
+                } else if (field.type === 'email' && !isValidEmail(field.value)) {
+                    isValid = false;
+                    field.style.borderColor = 'var(--danger)';
+                    if (errorDiv) {
+                        errorDiv.textContent = 'Please enter a valid email address';
+                        errorDiv.style.display = 'block';
+                    }
+                } else if (field.type === 'tel' && !isValidPhone(field.value)) {
+                    isValid = false;
+                    field.style.borderColor = 'var(--danger)';
+                    if (errorDiv) {
+                        errorDiv.textContent = 'Please enter a valid phone number';
+                        errorDiv.style.display = 'block';
+                    }
+                } else {
+                    field.style.borderColor = '';
+                }
+            });
+            
+            // Validate terms checkbox
+            const termsCheckbox = document.getElementById('terms');
+            const termsError = document.getElementById('termsError');
+            if (!termsCheckbox.checked) {
+                isValid = false;
+                termsError.textContent = 'You must agree to the terms and conditions';
+                termsError.style.display = 'block';
+            } else {
+                termsError.style.display = 'none';
+            }
+            
+            return isValid;
+        }
+
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+        function isValidPhone(phone) {
+            // Accept various phone formats
+            const phoneRegex = /^[\d\s\-\+\(\)]{10,}$/;
+            return phoneRegex.test(phone.replace(/\s/g, ''));
+        }
+
+        // Form submission
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            if (!validateForm()) {
+                errorMessage.style.display = 'block';
+                errorMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                return;
+            }
+            
+            // Show loading state
+            submitText.style.display = 'none';
+            loadingSpinner.style.display = 'inline';
+            submitBtn.disabled = true;
+            
+            // Simulate API call
+            setTimeout(() => {
+                // Get form data
+                const formData = new FormData(form);
+                const data = {};
+                formData.forEach((value, key) => {
+                    data[key] = value;
+                });
+                
+                // Save to localStorage for demo purposes
+                const registrations = JSON.parse(localStorage.getItem('cyntasRegistrations') || '[]');
+                data.timestamp = new Date().toISOString();
+                data.id = 'REG-' + Date.now();
+                registrations.push(data);
+                localStorage.setItem('cyntasRegistrations', JSON.stringify(registrations));
+                
+                // Show success message
+                successMessage.style.display = 'block';
+                submitText.style.display = 'inline';
+                loadingSpinner.style.display = 'none';
+                submitBtn.disabled = false;
+                
+                // Scroll to success message
+                successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                
+                // Reset form after successful submission
+                setTimeout(() => {
+                    form.reset();
+                    successMessage.style.display = 'none';
+                    
+                    // Show download option
+                    const downloadSection = document.createElement('div');
+                    downloadSection.innerHTML = `
+                        <div style="background: linear-gradient(135deg, var(--accent-light) 0%, #F4E4B5 100%); padding: 2rem; border-radius: 8px; margin-top: 2rem; text-align: center; border: 1px solid rgba(212, 175, 55, 0.3);">
+                            <h3 style="color: var(--primary-bg); margin-bottom: 1rem;">Registration Complete!</h3>
+                            <p style="color: var(--dark-text); margin-bottom: 1.5rem;">Your registration ID: <strong>${data.id}</strong></p>
+                            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                                <button id="downloadDetails" class="btn btn-primary" style="padding: 0.75rem 1.5rem;">
+                                    <i class="fas fa-download"></i> Download Details
+                                </button>
+                                <a href="index.html" class="btn" style="border-color: var(--accent); color: var(--accent);">
+                                    <i class="fas fa-home"></i> Return Home
+                                </a>
+                            </div>
+                        </div>
+                    `;
+                    
+                    form.parentElement.appendChild(downloadSection);
+                    
+                    // Download functionality
+                    document.getElementById('downloadDetails').addEventListener('click', function() {
+                        const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+                        const url = URL.createObjectURL(blob);
+                        const a = document.createElement('a');
+                        a.href = url;
+                        a.download = `cyntas-registration-${data.id}.json`;
+                        document.body.appendChild(a);
+                        a.click();
+                        document.body.removeChild(a);
+                        URL.revokeObjectURL(url);
+                    });
+                }, 2000);
+                
+            }, 1500); // Simulate network delay
+        });
+
+        // Real-time validation
+        form.querySelectorAll('input, select, textarea').forEach(field => {
+            field.addEventListener('blur', function() {
+                const errorDiv = this.parentElement.querySelector('.field-error');
+                
+                if (this.hasAttribute('required') && !this.value.trim()) {
+                    this.style.borderColor = 'var(--danger)';
+                    if (errorDiv) {
+                        errorDiv.textContent = 'This field is required';
+                        errorDiv.style.display = 'block';
+                    }
+                } else if (this.type === 'email' && this.value && !isValidEmail(this.value)) {
+                    this.style.borderColor = 'var(--danger)';
+                    if (errorDiv) {
+                        errorDiv.textContent = 'Please enter a valid email address';
+                        errorDiv.style.display = 'block';
+                    }
+                } else if (this.type === 'tel' && this.value && !isValidPhone(this.value)) {
+                    this.style.borderColor = 'var(--danger)';
+                    if (errorDiv) {
+                        errorDiv.textContent = 'Please enter a valid phone number';
+                        errorDiv.style.display = 'block';
+                    }
+                } else {
+                    this.style.borderColor = '';
+                    if (errorDiv) {
+                        errorDiv.style.display = 'none';
+                    }
+                }
+            });
+            
+            field.addEventListener('input', function() {
+                const errorDiv = this.parentElement.querySelector('.field-error');
+                this.style.borderColor = '';
+                if (errorDiv) {
+                    errorDiv.style.display = 'none';
+                }
+            });
+        });
+
+        // Auto-format phone number
+        const phoneInput = document.getElementById('phone');
+        phoneInput.addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            
+            if (value.startsWith('263')) {
+                value = '+' + value;
+            } else if (value.length > 0 && !value.startsWith('263')) {
+                value = '+263' + value;
+            }
+            
+            // Format: +263 77 123 4567
+            if (value.length > 4) {
+                value = value.substring(0, 4) + ' ' + value.substring(4);
+            }
+            if (value.length > 7) {
+                value = value.substring(0, 7) + ' ' + value.substring(7);
+            }
+            if (value.length > 11) {
+                value = value.substring(0, 11) + ' ' + value.substring(11);
+            }
+            
+            e.target.value = value;
+        });
+
+        // Initialize pre-filling
+        prefillFromURL();
+
+        // Location-based investment level adjustment
+        const locationSelect = document.getElementById('location');
+        const investmentLevelSelect = document.getElementById('investment_level');
+        
+        locationSelect.addEventListener('change', function() {
+            if (this.value === 'Diaspora') {
+                // Find and select Diaspora option
+                for (let option of investmentLevelSelect.options) {
+                    if (option.value === 'Diaspora ($1,000+)') {
+                        investmentLevelSelect.value = option.value;
+                        break;
+                    }
+                }
+            }
+        });
+
+        // Add character counter for textarea
+        const additionalInfo = document.getElementById('additional_info');
+        const charCounter = document.createElement('div');
+        charCounter.style.fontSize = '0.8rem';
+        charCounter.style.color = 'var(--gray-text)';
+        charCounter.style.textAlign = 'right';
+        charCounter.style.marginTop = '0.25rem';
+        additionalInfo.parentElement.appendChild(charCounter);
+
+        additionalInfo.addEventListener('input', function() {
+            const remaining = 500 - this.value.length;
+            charCounter.textContent = `${this.value.length}/500 characters`;
+            charCounter.style.color = remaining < 50 ? 'var(--danger)' : 'var(--gray-text)';
+        });
+
+        // Initialize counter
+        charCounter.textContent = `0/500 characters`;
+    });
+    </script>
+</body>
+
+</html>
+
+
